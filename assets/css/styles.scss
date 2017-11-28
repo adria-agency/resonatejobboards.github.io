@@ -1,0 +1,66 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.0rem;
+}
+
+.main-header {
+  font-size: 5.5rem;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+p, ul li {
+  color: #b9c9da;
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+.bg-medium-blue {
+  background-color: #1f364d;
+  color: #ffffff;
+}
+
+.bg-dark-blue {
+  background-color: #0E2439;
+  color: #fff;
+}
+
+.jumbotron-top {
+  padding-bottom: 50px;
+}
+
+.container-padded {
+  padding: 40px 5px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
+
+.cell {
+  text-align: center;
+  padding: 12px 15px;
+
+  &.cell-dark-gray {
+    background-color: #303036;
+    color: #fff;
+  }
+
+  &.cell-very-light-gray {
+    background-color: #eeeef3;
+    color: #222222;
+  }
+
+  &.cell-white {
+    background-color: #ffffff;
+    color: #222222;
+  }
+
+}
