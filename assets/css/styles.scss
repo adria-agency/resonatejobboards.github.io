@@ -1,17 +1,74 @@
+$medium-blue: #1f364d;
+$medium-bright-blue: #38516b;
+$dark-blue: #0E2439;
+$bright-blue: #b9c9da;
+
 body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.25rem;
   line-height: 2.0rem;
 }
 
+.navbar .navbar-brand .brand {
+  text-align: center;
+  display: inline-block;
+  color: $dark-blue;
+  background-color: #ffffff;
+  font-weight: 600;
+  height: 32px;
+  width: 32px;
+}
+
+.main a,
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 3px solid rgb(230, 55, 90);
+  @include hover-focus-active {
+    background-color: $medium-bright-blue;
+  }
+}
+
+.highlight {
+  color: #ffffff;
+}
+
+a.case-study {
+  display: inline-block;
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  border: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
 .main-header {
-  font-size: 5.5rem;
+  font-size: 3.2rem;
   margin-top: 30px;
   font-weight: 500;
 }
 
+@include media-breakpoint-up(md) {
+  .main-header {
+    font-size: 5.5rem;
+  }
+}
+
+hr.line {
+  padding: 0;
+  margin: 0;
+  height: 1px;
+  background-color: $medium-blue;
+  //background-color: lighten($medium-blue, 10%);
+}
+
 p, ul li {
-  color: #b9c9da;
+  color: $bright-blue;
 }
 
 p {
@@ -19,12 +76,12 @@ p {
 }
 
 .bg-medium-blue {
-  background-color: #1f364d;
+  background-color: $medium-blue;
   color: #ffffff;
 }
 
 .bg-dark-blue {
-  background-color: #0E2439;
+  background-color: $dark-blue;
   color: #fff;
 }
 
@@ -44,9 +101,15 @@ p {
   margin-top: 15px;
 }
 
+.cell-container {
+  background-color: #274059;
+}
+
 .cell {
   text-align: center;
   padding: 12px 15px;
+
+  border-bottom: 1px solid $medium-blue;
 
   &.cell-dark-gray {
     background-color: #303036;
